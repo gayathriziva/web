@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Motivation</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+
+    <div id="quote">
+      <label>Name: 
+        <input type="text" id="nameInput" placeholder="Enter your name">
+      </label>
+      <button onclick="quotes()">Get Your Quote</button>
+      <p id="quoteText"></p>
+    </div>
+
+    <script>
+      const r = [
+        "You are stronger than you think.",
+        "Every tough moment you face is making you stronger.",
+        "It’s okay to take small steps. Keep going.",
+        "Don’t give up. You are closer than you think.",
+        "Every day is a new chance to start again.",
+        "chill nanba",
+        "The pain won’t last forever. You will get through it.",
+        "Even on your hardest days, you are still growing.",
+        "It’s okay to not feel okay sometimes.",
+        "What feels impossible today will get easier with time.",
+        "The only way out is through. Keep moving forward.",
+        "Your struggle today is the strength you’ll have tomorrow.",
+        "You don’t have to be perfect, just keep trying.",
+        "You have the power to change your story.",
+        "Believe in yourself; you are worth fighting for."
+      ];
+
+      function quotes() {
+        let t = document.getElementById("nameInput").value;
+        let greeting = t ? "Hi " + t : "Hello!";
+        let randomQuote = r[Math.floor(Math.random() * r.length)];
+        document.getElementById("quoteText").innerHTML = greeting + "<br>" + randomQuote;
+      }
+    </script>
+  </body>
+</html>

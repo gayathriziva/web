@@ -1,0 +1,17 @@
+body{
+   background-color: aqua;
+
+   
+}
+
+button:hover{
+    background-color:hotpink;
+    
+    cursor: pointer;
+    
+}
+#quote{
+
+    text-align: center;
+    padding:70px;
+}
